@@ -9,3 +9,5 @@ function twice(x){
     return x*2;
 }
 console.log(brr);
+arr= arr.map(ele => ele*ele);
+console.log(arr);
