@@ -6,4 +6,4 @@ for(let i=0;i<=59;i++){
     s+=`<div class="card"><img src="${arr[a]}"></div>`;
 }
 main.innerHTML=s;
-alert("ruk ja bhai ")
+// alert("ruk ja bhai ")

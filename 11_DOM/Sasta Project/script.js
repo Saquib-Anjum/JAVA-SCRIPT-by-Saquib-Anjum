@@ -5,7 +5,7 @@ s1.addEventListener("mouseenter",function(){
    s1.innerHTML=`<h1>${r}</h1>`;
 });
 s1.addEventListener("mouseleave",function(){
-    //s1.style.backgroundColor="white";
+    s1.style.backgroundColor="white";
     s1.innerHTML="<h1>1</h1>";
  });
 
@@ -28,7 +28,7 @@ s2.addEventListener("mouseenter",function(){
 });
 s2.addEventListener("mouseleave",function(){
     s2.style.backgroundColor="white";
-    // s2.innerHTML="<h1>1</h1>";
+    
  });
 
 let s3 = document.getElementById("shape3");

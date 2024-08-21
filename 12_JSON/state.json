@@ -1,0 +1,44 @@
+{
+    "name": "John Doe",
+    "age": 25,
+    "isStudent": true,
+    "courses": ["Mathematics", "Computer Science", "Physics"],
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "postalCode": "10001",
+      "country": "USA"
+    },
+    "email": "john.doe@example.com",
+    "phoneNumber": "+1-123-456-7890",
+    "graduationYear": 2023,
+    "skills": [
+      {
+        "name": "JavaScript",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Python",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "HTML & CSS",
+        "proficiency": "Advanced"
+      }
+    ],
+    "workExperience": [
+      {
+        "position": "Intern",
+        "company": "Tech Solutions",
+        "startDate": "2022-06-01",
+        "endDate": "2022-08-30",
+        "responsibilities": [
+          "Developed web applications",
+          "Collaborated with team on software projects",
+          "Performed debugging and testing"
+        ]
+      }
+    ],
+    "hobbies": ["Reading", "Hiking", "Coding"]
+  }
+  

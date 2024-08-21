@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>..................................JSON.......................................... </h1>
+    <script>
+        let product= {
+         name :"T Shirt",
+         price:799,
+         teg:"Cloth",
+         design:"Round Neck"
+         
+        }
+        console.log(typeof(product));
+        let str=JSON.stringify(product);
+        console.log(str);
+        console.log("Vaiable Type ",typeof str);
+        let ans = JSON.parse(str);
+        console.log("Varible  Type ",typeof(ans));
+        console.log(ans);
+        console.log(localStorage.getItem('price'));
+        
+
+    </script>
+</body>
+</html>
