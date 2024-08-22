@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my_button{
+         height: 200px;
+         width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="display" id="display"><h1>Hii</h1></div>
+    <div class="abc" id="abc">
+        <button id="my_button" onclick="buttonPressed()" >0</button>
+    </div>
+</body>
+<script>
+    let my_date = new Date();
+    function Greeting(){
+        
+        let time = my_date.getHours;
+        time=12;
+        if(time>5&&time<=12) return "Good Morning";
+        else if(time>12 && time<=19) return "Good Evening";
+        else return "Good Night";
+    }
+    let message=Greeting();
+    let a= document.getElementById("display");
+    a.innerHTML=`<h1>${message}</h1>`;
+    //button 
+    let noofTimesClicked=0;
+   
+    function buttonPressed(){
+        let button = document.querySelector('#my_button');  
+        noofTimesClicked++;
+        button.innerText=noofTimesClicked;
+        localStorage.setItem('noofTimesClicked',noofTimesClicked);
+        console.log(noofTimesClicked);
+
+   }
+   let button = document.querySelector('#my_button'); 
+   button.addEventListener("click",function(){
+    let a = Math.floor(Math.random()*256);
+    let b = Math.floor(Math.random()*256);
+    let c = Math.floor(Math.random()*256);
+    button.style.backgroundColor=`rgb(${a}, ${b}, ${c})`;
+    
+   });
+  
+</script>
+</html>
