@@ -1,0 +1,55 @@
+body{
+    font-family:Arial;
+   
+      background-image: url('abc.gif');  /* Provide the path to your image */
+      background-image: url('abc.gif');
+      background-size: cover;  /* Ensures the image covers the entire area */
+      background-position: center;  /* Centers the image */
+      background-repeat: no-repeat;  /* Prevents the image from repeating */
+  
+  
+}
+#main_heading {
+  text-align: center;  
+}
+.grid_container{
+  display:grid;
+  grid-template-columns: 200px 150px 100px;
+  row-gap: 10px;
+  column-gap: 10px;
+ 
+}
+
+.todo_container{
+  /* color:red; */
+  display:grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+#todo_input, #input_date{
+  font-size: 15px;
+  padding: 10px 5px;
+}
+.todo_btn_add{
+  background-color: rgb(23, 187, 47);
+  color:white;
+  border:none;
+  border-radius: 10px;
+  padding:15px 0px;
+  cursor: pointer;
+}
+.todo_btn_delete{
+background-color: rgb(43, 4, 4);
+color:white;
+border:none;
+border-radius: 10px;
+padding:15px 0px;
+cursor: pointer;
+}
+.main_div{
+  display: center;
+  align-items: center;
+}
