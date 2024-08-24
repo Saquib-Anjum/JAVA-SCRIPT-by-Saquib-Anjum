@@ -1,15 +1,24 @@
-let bagItems=[];
+let bagItems;
+onLoad();
+
+function onLoad() {
+  let bagItemsStr = localStorage.getItem('bagItems');
+  bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
+  DisplayItemOnHomePage();
+  displayBagIcon();
+}
 
 //to add Item on bag
-displayBagIcon()
 function addToBag(itemId){
 bagItems.push(itemId);
-localStorage.setItem('badItems' , JSON.stringify(bagItems));
-displayBagIcon()
+localStorage.setItem('bagItems', JSON.stringify(bagItems));
+displayBagIcon();
 }
+
 //bag
 function displayBagIcon(){
     let bagItemCountElement = document.querySelector('.bag_item_count');
+    
     if(bagItems.length>0){
         bagItemCountElement.style.visibility='visible';
         bagItemCountElement.innerText=bagItems.length;
@@ -19,10 +28,16 @@ function displayBagIcon(){
     }
 }
 //to display item on home page
-let itemsContainerElement=document.querySelector('.items_container');
-let innerHtm="";
-DisplayItemOnHomePagee();
-function DisplayItemOnHomePagee(){
+
+
+
+function DisplayItemOnHomePage(){
+    let itemsContainerElement=document.querySelector('.items_container');
+    if (!itemsContainerElement) {
+        console.log("Items container not found.");
+        return;
+      }
+    let innerHtm="";
     items.forEach(item=>{
         innerHtm+=`
         <div class="item_container">
@@ -41,6 +56,7 @@ function DisplayItemOnHomePagee(){
                    </div>
        `
        });
-}
-itemsContainerElement.innerHTML=innerHtm;
+       itemsContainerElement.innerHTML=innerHtm;
+};
+
 
